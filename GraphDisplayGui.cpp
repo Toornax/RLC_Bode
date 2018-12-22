@@ -1,6 +1,7 @@
 #include "GraphDisplayGui.hpp"
 
-GraphDisplayGui::GraphDisplayGui(QWidget *parent) : QMainWindow(parent)
+GraphDisplayGui::GraphDisplayGui(QWidget *parent) :
+    QMainWindow(parent)
 {
 
 }

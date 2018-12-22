@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="cap">img/capacitor.png</file>
+        <file alias="coil">img/coil.png</file>
+        <file alias="res">img/resistor.png</file>
+    </qresource>
+</RCC>
