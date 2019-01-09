@@ -55,7 +55,7 @@
             <number>1</number>
            </property>
            <property name="maximum">
-            <number>1000</number>
+            <number>100000</number>
            </property>
           </widget>
          </item>
@@ -74,6 +74,12 @@
           <widget class="QDoubleSpinBox" name="sb_freq">
            <property name="suffix">
             <string>Hz</string>
+           </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>10000000.000000000000000</double>
            </property>
           </widget>
          </item>
@@ -96,6 +102,12 @@
            <property name="suffix">
             <string>Hz</string>
            </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>10000000.000000000000000</double>
+           </property>
           </widget>
          </item>
         </layout>
@@ -113,6 +125,12 @@
           <widget class="QDoubleSpinBox" name="sb_freq_max">
            <property name="suffix">
             <string>Hz</string>
+           </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>10000000.000000000000000</double>
            </property>
           </widget>
          </item>

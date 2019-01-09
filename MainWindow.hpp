@@ -3,6 +3,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QtCore/QList>
+#include <QtCore/QPair>
 #include <complex>
 #include "CircuitDrawer.hpp"
 
@@ -20,7 +21,7 @@ public:
     ~MainWindow();
 
 private:
-    QList<std::complex<double>> calculate(double, Component, double, Component, double, Component) const;
+    QList<QPair<double, std::complex<double>>> calculate() const;
     std::complex<double> getImpedance(double, double, Component) const;
 
 private slots:

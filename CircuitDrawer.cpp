@@ -43,15 +43,59 @@ CircuitDrawer::CircuitDrawer(QWidget* parent) :
 }
 
 double CircuitDrawer::getValueComponent1() const {
-    return this->sb_comp1->value();
+    double value = this->sb_comp1->value();
+
+    switch(this->comp1) {
+        case Component::Capacitor:
+            value *= 1e-6;
+            break;
+
+        case Component::Inductance:
+            value *= 1e-3;
+            break;
+
+        default:;
+    }
+
+    qDebug() << value;
+
+    return value;
 }
 
 double CircuitDrawer::getValueComponent2() const {
-    return this->sb_comp2->value();
+    double value = this->sb_comp2->value();
+
+    switch(this->comp2) {
+        case Component::Capacitor:
+            value *= 1e-6;
+            break;
+
+        case Component::Inductance:
+            value *= 1e-3;
+            break;
+
+        default:;
+    }
+
+    return value;
 }
 
 double CircuitDrawer::getValueComponent3() const {
-    return this->sb_comp3->value();
+    double value = this->sb_comp3->value();
+
+    switch(this->comp3) {
+        case Component::Capacitor:
+            value *= 1e-6;
+            break;
+
+        case Component::Inductance:
+            value *= 1e-3;
+            break;
+
+        default:;
+    }
+
+    return value;
 }
 
 Component CircuitDrawer::getTypeComponent1() const {
